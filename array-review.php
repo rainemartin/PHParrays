@@ -9,11 +9,6 @@
 // Part 1
 $animals = ['panda', 'alpaca', 'boa'];
 
-printSort($animals);
-addString("goat", $animals);
-printSort($animals);
-addString("boa", $animals);
-printSort($animals);
 
 function printSort($unsorted)
 {
@@ -27,12 +22,13 @@ function printSort($unsorted)
     echo '</p>';
 }
 
-function addString($item, $array)
+
+function addString($arrayAdd, $item)
 {
     echo "Adding $item...";
-    if(!in_array($item, $array))
+    if(!in_array($item, $arrayAdd))
     {
-        $array[] = $item;
+        $arrayAdd[] = $item;
     }
 }
 
@@ -40,8 +36,6 @@ function addString($item, $array)
 $cupcakeFlavors = ['grasshopper'=>'The Grasshopper', 'maple'=>'Whiskey Maple Bacon',
     'carrot'=>'Carrot Walnut', 'caramel'=>'Salted Caramel Cupcake', 'velvet'=>'Red Velvet',
     'lemon'=>'Lemon Drop', 'tiramisu'=>'Tiramisu'];
-
-displayCheckbox($cupcakeFlavors);
 
 function displayCheckbox($array)
 {
@@ -51,3 +45,12 @@ function displayCheckbox($array)
         echo "<input type='checkbox' name='flavors[]' value='$key'> $value<br>";
     }
 }
+
+
+// Output Testing
+printSort($animals);
+addString($animals, 'goat');
+printSort($animals);
+addString($animals, 'boa');
+printSort($animals);
+displayCheckbox($cupcakeFlavors);
