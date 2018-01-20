@@ -8,6 +8,11 @@
 
 $animals = ['panda', 'alpaca', 'boa'];
 
+printSort($animals);
+addItem('goat', $animals);
+printSort($animals);
+addItem('boa', $animals);
+printSort($animals);
 
 function printSort($unsorted)
 {
@@ -19,4 +24,13 @@ function printSort($unsorted)
         echo "$item";
     }
     echo '</p>';
+}
+
+function addItem($item, $array)
+{
+    if(!in_array($item, $array))
+    {
+        $array[] = $item;
+        echo "Adding $item...";
+    }
 }
