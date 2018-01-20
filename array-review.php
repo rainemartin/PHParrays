@@ -1,11 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: RMartin
- * Date: 1/16/2018
- * Time: 5:52 PM
+ * User: Raine Padilla
+ * Date: 1/15/2018
+ * Time: 2:52 PM
  */
 
+// Part 1
 $animals = ['panda', 'alpaca', 'boa'];
 
 printSort($animals);
@@ -34,3 +35,8 @@ function addItem($item, $array)
         echo "Adding $item...";
     }
 }
+
+// Part 2
+$cupcakeFlavors = ['grasshopper'=>'The Grasshopper', 'maple'=>'Whiskey Maple Bacon',
+    'carrot'=>'Carrot Walnut', 'caramel'=>'Salted Caramel Cupcake', 'velvet'=>'Red Velvet',
+    'lemon'=>'Lemon Drop', 'tiramisu'=>'Tiramisu'];
