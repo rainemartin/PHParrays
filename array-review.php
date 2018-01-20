@@ -9,3 +9,14 @@
 $animals = ['panda', 'alpaca', 'boa'];
 
 
+function printSort($unsorted)
+{
+    sort($unsorted);
+    echo '<p id="output">';
+
+    foreach($unsorted as $item)
+    {
+        echo "$item";
+    }
+    echo '</p>';
+}
